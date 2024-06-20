@@ -14,6 +14,12 @@ dependencies:
   '@liveblocks/react-comments':
     specifier: ^1.12.0
     version: 1.12.0(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1)(react@18.3.1)
+  '@radix-ui/react-dropdown-menu':
+    specifier: ^2.0.6
+    version: 2.0.6(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1)(react@18.3.1)
+  '@radix-ui/react-slot':
+    specifier: ^1.0.2
+    version: 1.0.2(@types/react@18.3.2)(react@18.3.1)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -46,6 +52,9 @@ dependencies:
     version: 9.0.1
 
 devDependencies:
+  '@types/fabric':
+    specifier: ^5.3.7
+    version: 5.3.7
   '@types/node':
     specifier: ^20
     version: 20.12.12
@@ -990,6 +999,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@types/fabric@5.3.7:
+    resolution: {integrity: sha512-Fd2oN4zg/E6X+85HbmWSpswzcu3rvDfmwtvz1SH0j2av9OFHZDRrkLQ3K16nl6w+mSflrcTfmB719I7wXkfIsw==}
+    dev: true
 
   /@types/is-hotkey@0.1.10:
     resolution: {integrity: sha512-RvC8KMw5BCac1NvRRyaHgMMEtBaZ6wh0pyPTBu7izn4Sj/AX9Y4aXU5c7rX8PnM/knsuUpC1IeoBkANtxBypsQ==}
