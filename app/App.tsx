@@ -22,6 +22,7 @@ import { fabric } from 'fabric';
 import Image from 'next/image';
 import { act, useEffect, useRef, useState } from 'react';
 import { Room } from './Room';
+import {any} from "prop-types";
 
 export default function Page() {
     const undo = useUndo();
@@ -63,6 +64,7 @@ export default function Page() {
         const canvasObjects = storage.get('canvasObjects');
         if (!canvasObjects || canvasObjects.size === 0) return true;
 
+        // @ts-ignore
         for (const [key, value] of canvasObjects.entries()) {
             canvasObjects.delete(key);
         }
