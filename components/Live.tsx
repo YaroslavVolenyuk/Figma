@@ -11,6 +11,7 @@ import CursorChat from './cursor/CursorChat';
 import LiveCursors from './cursor/LiveCursors';
 import FlyingReaction from './reaction/FlyingReaction';
 import ReactionSelector from './reaction/ReactionButton';
+import {Comments} from "@/components/comments/Comments";
 
 type Props = {
   canvasRef: React.MutableRefObject<HTMLCanvasElement | null>;
@@ -179,6 +180,7 @@ const Live = ({ canvasRef }: Props) => {
         <ReactionSelector setReaction={setReactions} />
       )}
       <LiveCursors others={others} />
+      {/*<Comments/>*/}
     </div>
   );
 };

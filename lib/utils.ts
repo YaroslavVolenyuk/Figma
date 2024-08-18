@@ -1,5 +1,5 @@
 import { type ClassValue, clsx } from 'clsx';
-// import jsPDF from "jspdf";
+import jsPDF from "jspdf";
 import { twMerge } from 'tailwind-merge';
 
 const adjectives = [

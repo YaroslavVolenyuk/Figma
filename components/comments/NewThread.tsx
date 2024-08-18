@@ -28,11 +28,6 @@ export const NewThread = ({ children }: Props) => {
     'placing' | 'placed' | 'complete'
   >('complete');
 
-  /**
-   * We're using the useCreateThread hook to create a new thread.
-   *
-   * useCreateThread: https://liveblocks.io/docs/api-reference/liveblocks-react#useCreateThread
-   */
   const createThread = useCreateThread();
 
   // get the max z-index of a thread
@@ -215,11 +210,6 @@ export const NewThread = ({ children }: Props) => {
 
       {/* if composer coords exist and we're placing a comment, render the composer */}
       {composerCoords && creatingCommentState === 'placed' ? (
-        /**
-         * Portal.Root is used to render the composer outside of the NewThread component to avoid z-index issuess
-         *
-         * Portal.Root: https://www.radix-ui.com/primitives/docs/utilities/portal
-         */
         <Portal.Root
           className="absolute left-0 top-0"
           style={{
